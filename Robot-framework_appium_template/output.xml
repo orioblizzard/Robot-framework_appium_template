@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0a2 (Python 3.11.4 on darwin)" generated="2024-09-10T13:11:08.810098" rpa="false" schemaversion="5">
+<suite id="s1" name="openApplication" source="/Users/sutin/github/Robot-framework_appium_template/tests/openApplication.robot">
+<test id="s1-t1" name="Verify On-Off Button" line="10">
+<kw name="Install And Open Application" owner="commonKeywords">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${remoteUrl}</arg>
+<arg>automationName=${automation}</arg>
+<arg>platformName=${device}</arg>
+<arg>platformVersion=${deviceVer}</arg>
+<arg>udid=${udid}</arg>
+<arg>app=/Users/sutin/github/Robot-framework_appium_template/keywords/common/../../resources/${env}/ApiDemos-debug.apk</arg>
+<arg>appPackage=${appPackage}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-09-10T13:11:08.887232" elapsed="6.874171"/>
+</kw>
+<status status="PASS" start="2024-09-10T13:11:08.887062" elapsed="6.874518"/>
+</kw>
+<kw name="Click View Button" owner="homePage">
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${homepage.btnView}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg time="2024-09-10T13:11:15.763949" level="INFO">Clicking element 'accessibility_id=Views'.</msg>
+<status status="PASS" start="2024-09-10T13:11:15.762216" elapsed="1.770633"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${homepage.btnButtons}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-09-10T13:11:17.534297" elapsed="0.038445"/>
+</kw>
+<status status="PASS" start="2024-09-10T13:11:15.761842" elapsed="1.811106"/>
+</kw>
+<kw name="Click Buttons" owner="viewPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${homepage.btnButtons}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg time="2024-09-10T13:11:17.576320" level="INFO">Clicking element 'accessibility_id=Buttons'.</msg>
+<status status="PASS" start="2024-09-10T13:11:17.573981" elapsed="1.306985"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${homepage.btnToggle}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2024-09-10T13:11:18.881457" elapsed="0.039468"/>
+</kw>
+<status status="PASS" start="2024-09-10T13:11:17.573439" elapsed="1.347629"/>
+</kw>
+<kw name="Click Toggle" owner="buttonPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${homepage.btnToggle}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg time="2024-09-10T13:11:18.924452" level="INFO">Clicking element 'accessibility_id=Toggle'.</msg>
+<status status="PASS" start="2024-09-10T13:11:18.922707" elapsed="0.064569"/>
+</kw>
+<kw name="Element Text Should Be" owner="AppiumLibrary">
+<arg>${homepage.btnToggle}</arg>
+<arg>ON</arg>
+<doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
+<msg time="2024-09-10T13:11:18.988530" level="INFO">Verifying element 'accessibility_id=Toggle' contains exactly text 'ON'.</msg>
+<status status="PASS" start="2024-09-10T13:11:18.987391" elapsed="0.689291"/>
+</kw>
+<status status="PASS" start="2024-09-10T13:11:18.921538" elapsed="0.755312"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>/Users/sutin/github/Robot-framework_appium_template/tests</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-09-10T13:11:19.677223" elapsed="0.000415"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2024-09-10T13:11:19.677863" elapsed="0.272480"/>
+</kw>
+<status status="PASS" start="2024-09-10T13:11:08.886825" elapsed="11.063976"/>
+</test>
+<status status="PASS" start="2024-09-10T13:11:08.811016" elapsed="11.145421"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="openApplication">openApplication</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

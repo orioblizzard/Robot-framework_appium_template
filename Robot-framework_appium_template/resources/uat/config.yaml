@@ -1,0 +1,9 @@
+automation:        UiAutomator2
+remoteUrl:         http://0.0.0.0:4723
+device:            android
+deviceVer:         '13.0'
+udid:              emulator-5554
+app:               /Users/sutin/robot_template/resources/ApiDemos-debug.apk
+systemPort:        8201
+appPackage:        io.appium.android.apis
+# appActivity:
