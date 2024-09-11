@@ -11,6 +11,7 @@ Verify On-Off Button
        commonKeywords.Install And Open Application
        homepage.Click View Button
        viewPage.Click Buttons
-       buttonPage.Click Toggle
+       buttonPage.Click Toggle      ON
+       buttonPage.Click Toggle      OFF
        log to console    ${CURDIR}
        close application
